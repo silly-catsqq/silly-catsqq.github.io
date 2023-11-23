@@ -1,37 +1,34 @@
 /* HEADER */
-
-.menu {
+.menu{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
 }
 
-.header-row {
+.header-row{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.header-logo {
-    /* включаем flexbox */
+.header-logo{
     display: flex;
-    /* Направление расположзения блоков относительно main axis слева направо */
-    flex-direction: row;
-    /* Направление расположзения блоков относительно cross axis по центру */
+    flex-direction: row;   
     align-items: center;
-    /* размер блок с лого и названием (его вес) относиетльно других элементов */
     flex-grow: 1;
 }
 
-.logo-img {
+.logo-img{
     margin-right: 40px;
 }
 
-.header-menu {
+.header-menu{
     flex-grow: 3;
 }
 
-.cards-row {
+/* CARDS */
+
+.cards-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,13 +36,42 @@
 
 /* FOOTER */
 
-.footer-row {
+.footer-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.social-networks {
+.social-networks{
     display: flex;
     justify-content: flex-end;
+}
+
+.footer-logo{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.footer-search{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    align-items: center;
+}
+
+.footer-search-input{
+    height: 40px;
+    flex-grow: 3;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer-search-button{
+    height: 40px;
+    flex-grow: 2;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
